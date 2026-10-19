@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>NOVA — متجر رقمي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">N</span><span>NOVA<small> DIGITAL MARKET</small></span></a>
+  <nav><a href="#products">المتجر</a><a href="#categories">الأقسام</a><a href="#support">الدعم</a></nav>
+  <div class="header-actions"><button class="icon-btn" id="accountBtn">حسابي</button><button class="cart-btn" id="cartOpen">السلة <span id="cartCount">0</span></button><button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button></div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> وجهتك للمنتجات الرقمية</div>
+      <h1>ارتقِ بتجربتك<br><span>إلى مستوى جديد.</span></h1>
+      <p>اكتشف أدوات رقمية، اشتراكات، ومحتوى مختار بعناية — في مكان واحد.</p>
+      <div class="hero-actions"><a class="primary-btn" href="#products">تصفّح المنتجات <span>←</span></a><a class="text-btn" href="#categories">اكتشف الأقسام</a></div>
+      <div class="hero-stats"><div><strong>+1,200</strong><small>عميل سعيد</small></div><div><strong>24/7</strong><small>دعم ومساعدة</small></div><div><strong>آمن</strong><small>تجربة شراء واضحة</small></div></div>
+    </div>
+    <div class="hero-art" aria-label="رسم زخرفي"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="glass-card"><div class="card-top"><span>اختيار المحرر</span><span class="tiny-dot"></span></div><div class="cube">✦</div><div class="art-lines"><b>Digital</b><strong>ESSENTIALS</strong><small>TOOLS · ACCESS · MORE</small></div><div class="art-price">ابتداءً من <b>19 ر.س</b></div></div><span class="float-tag tag-a">✧ منتجات مميزة</span><span class="float-tag tag-b">⚡ تسليم رقمي</span></div>
+  </section>
+  <section class="trust-strip"><span>✦ منتجات منتقاة</span><span>◈ تجربة سهلة</span><span>⌁ دعم العملاء</span><span>✓ أسعار واضحة</span></section>
+  <section class="section" id="categories"><div class="section-heading"><div><div class="eyebrow">تصفّح حسب اهتمامك</div><h2>الأقسام <span>الرئيسية</span></h2></div><p>اختر القسم المناسب لك وابدأ الاستكشاف.</p></div>
+    <div class="category-grid">
+      <button class="category-card active" data-category="الكل"><span class="cat-icon">✧</span><b>كل المنتجات</b><small>تشكيلة المتجر</small></button>
+      <button class="category-card" data-category="أدوات"><span class="cat-icon violet">⌘</span><b>أدوات رقمية</b><small>حلول لعملك</small></button>
+      <button class="category-card" data-category="اشتراكات"><span class="cat-icon blue">◉</span><b>اشتراكات</b><small>خدمات ومزايا</small></button>
+      <button class="category-card" data-category="ألعاب"><span class="cat-icon pink">⌁</span><b>ألعاب وترفيه</b><small>أضف المتعة</small></button>
+    </div>
+  </section>
+  <section class="section" id="products"><div class="section-heading"><div><div class="eyebrow">مختارة لك</div><h2>منتجات <span>مميزة</span></h2></div><div class="product-controls"><label class="search"><span>⌕</span><input id="searchInput" placeholder="ابحث عن منتج..."></label><select id="sortSelect" aria-label="ترتيب المنتجات"><option value="featured">الأكثر تميزاً</option><option value="low">السعر: الأقل أولاً</option><option value="high">السعر: الأعلى أولاً</option></select></div></div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+  <section class="seller-banner"><div><div class="eyebrow">لديك منتج رقمي؟</div><h2>حوّل فكرتك إلى <span>فرصة.</span></h2><p>انضم للبائعين واعرض منتجاتك في متجر NOVA.</p></div><button class="primary-btn" id="sellerBtn">استكشف البيع <span>←</span></button></section>
+  <section class="section lower-sections"><div class="community-card"><div class="community-icon">⌘</div><div><h3>مجتمع NOVA</h3><p>تابع التحديثات، شارك اقتراحاتك، وتواصل مع المجتمع.</p><a id="discordLink" href="#" target="_blank" rel="noopener">انضم إلى Discord ↗</a></div></div><div class="help-card" id="support"><div class="help-icon">✳</div><div><h3>نحن هنا لمساعدتك</h3><p>هل تحتاج إلى مساعدة في طلبك؟ ابدأ محادثة مع فريق الدعم.</p><button class="outline-btn" id="chatOpen">تواصل مع الدعم ↗</button></div></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">N</span><span>NOVA<small> DIGITAL MARKET</small></span></a><p>© <span id="year"></span> NOVA. جميع الحقوق محفوظة.</p><span class="footer-note">صُمّم لتجربة رقمية أفضل ✦</span></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer"><div class="drawer-head"><h2>سلة التسوق <span id="drawerCount">(0)</span></h2><button class="close-btn" data-close>×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div class="total-line"><span>الإجمالي</span><strong id="cartTotal">0 ر.س</strong></div><button class="primary-btn full" id="checkoutBtn">متابعة الدفع <span>←</span></button><small>تجربة توضيحية — لا تتم معالجة دفعات حقيقية.</small></div></aside>
+<div class="modal" id="accountModal"><button class="close-btn modal-close" data-close>×</button><div class="modal-icon">◉</div><h2>مرحباً بك في NOVA</h2><p>سجّل الدخول أو أنشئ حساباً لتتبع مشترياتك.</p><form id="accountForm"><label>البريد الإلكتروني<input type="email" id="emailInput" required placeholder="you@example.com"></label><label>الاسم المعروض<input id="nameInput" required placeholder="اسمك"></label><button class="primary-btn full" type="submit">متابعة <span>←</span></button></form><small class="muted">النموذج محلي للتجربة فقط؛ لا يوفّر مصادقة حقيقية.</small></div>
+<div class="modal" id="checkoutModal"><button class="close-btn modal-close" data-close>×</button><div class="modal-icon">✓</div><h2>إتمام الطلب</h2><p>هذه نسخة واجهة تجريبية. اربط بوابة دفع موثوقة وخادماً قبل استقبال المدفوعات.</p><div class="checkout-summary" id="checkoutSummary"></div><label class="pay-label">طريقة الدفع التجريبية<select id="paymentMethod"><option>PayPal (يتطلب إعداد رابطك)</option><option>تحويل بنكي (تجريبي)</option></select></label><button class="primary-btn full" id="confirmOrder">إنشاء طلب تجريبي</button></div>
+<div class="modal" id="sellerModal"><button class="close-btn modal-close" data-close>×</button><div class="modal-icon">✧</div><h2>ابدأ البيع على NOVA</h2><p>تستطيع إضافة المنتجات من لوحة البائع بعد تجهيز الخادم ونظام الصلاحيات.</p><ul class="feature-list"><li>إدارة منتجاتك وأسعارك</li><li>إضافة رابط تسليم رقمي</li><li>متابعة الطلبات والمبيعات</li></ul><button class="primary-btn full" data-close>حسناً، فهمت</button></div>
+<div class="chat-widget" id="chatWidget"><div class="chat-head"><span class="support-avatar">✳</span><div><b>دعم NOVA</b><small><span class="online-dot"></span> عادةً نرد بسرعة</small></div><button id="chatClose" aria-label="إغلاق">×</button></div><div class="chat-messages" id="chatMessages"><div class="message support-message">أهلاً بك! 👋 كيف يمكننا مساعدتك اليوم؟</div></div><form id="chatForm" class="chat-form"><input id="chatInput" placeholder="اكتب رسالتك..." required><button aria-label="إرسال">➤</button></form><small class="chat-disclaimer">رسائل تجريبية محفوظة في هذه الجلسة فقط.</small></div>
+<button class="chat-launcher" id="chatLauncher" aria-label="افتح الدعم">✳<span></span></button>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
